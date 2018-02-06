@@ -8,7 +8,7 @@ console.log('new Array(7) := ', new Array(7));//[,,,,,,,] means 7 empty items
 let arr = [1, 2, 3, 4, 5];
 console.log('Array.of(arr) := ', Array.of(arr));//[ [ 1, 2, 3, 4, 5 ] ]
 console.log('Array.of(...arr) := ', Array.of(...arr));//[ 1, 2, 3, 4, 5 ]
-console.log('Array.of("uma mahesh") := ', Array.of('uma mahesh'));//[ 1, 2, 3, 4, 5 ]
+console.log('Array.of("uma mahesh") := ', Array.of('uma mahesh'));//[ 'uma mahesh' ]
 */
 //2. Array.from(iterableObject)
 
@@ -29,6 +29,6 @@ const map1 = new Map([[1, 2], [2, 3], [3, 4], [4, 5]]);
 console.log(Array.from(map1));
 
 function name1() {
-    console.log(Array.from(arguments));
+    console.log(Array.from(arguments));//[1,2,3,4,5]
 }
 name1(1, 2, 3, 4, 5);
